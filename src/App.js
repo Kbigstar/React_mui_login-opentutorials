@@ -13,8 +13,6 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 export default function App() {
-
-  
   return (
     <Container component="main" maxWidth="xs">
       <Box
@@ -39,7 +37,7 @@ export default function App() {
           fullWidth
           name="email"
           autoComplete="email"
-          autoFocus
+          // autoFocus
         />
 
         <TextField label="비밀번호" type="password" fullWidth name="password" />
@@ -48,6 +46,7 @@ export default function App() {
           control={<Checkbox value="remember" color="primary" />}
           label="로그인 상태 유지하기"
         />
+
         <Button
           type="submit"
           fullWidth
